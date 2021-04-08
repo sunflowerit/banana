@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="menu_action_res_users"
+        action="base.action_res_users"
+        parent="menu_banana_root"
+        sequence="90"/>
+
+    <menuitem id="menu_action_res_groups"
+        action="base.action_res_groups"
+        parent="menu_banana_root"
+        sequence="91"/>
+
+    <menuitem id="menu_action_access"
+        action="base.ir_access_act"
+        parent="menu_banana_root"
+        sequence="92"/>
+
+    <menuitem id="menu_action_ir_rule"
+        action="base.action_rule"
+        parent="menu_banana_root"
+        sequence="93"/>
+
+</odoo>

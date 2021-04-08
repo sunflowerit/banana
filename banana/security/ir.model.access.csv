@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_banana,access_banana,model_banana,base.group_user,1,0,0,0 
+access_banana_tribe_leader,access_banana_tribe_leader,model_banana,group_banana_tribe_leader,1,1,1,1
+access_banana_global_leader,access_banana_global_leader,model_banana,group_banana_global_leader,1,1,1,1
+access_banana_superuser,access_banana_superuser,model_banana,group_tribe_manager,1,1,1,1
+access_monkey_tribe,access_monkey_tribe,model_monkey_tribe,base.group_user,1,0,0,0
+access_monkey_tribe_superuser,access_monkey_tribe_superuser,model_monkey_tribe,group_tribe_manager,1,1,1,1
+

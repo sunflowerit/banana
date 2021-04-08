@@ -5,16 +5,6 @@
         id="menu_banana_root"
         sequence="80"/>
 
-    <menuitem name="Bananas"
-        id="menu_banana"
-        parent="menu_banana_root"
-        sequence="10"/>
-
-    <menuitem id="menu_banana_form"
-        parent="menu_banana"
-        action="action_banana_form"
-        sequence="10"/>
-
     <record id="banana_tree_view" model="ir.ui.view">
         <field name="name">Banana Tree</field>
         <field name="model">banana</field>
@@ -57,12 +47,11 @@
         <field name="name">Bananas</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">banana</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
 
     <menuitem id="menu_banana_form"
-        parent="menu_banana"
+        parent="menu_banana_root"
         action="action_banana"
         sequence="10"/>
 

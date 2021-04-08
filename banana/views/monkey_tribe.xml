@@ -39,13 +39,12 @@
         <field name="name">Tribes</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">monkey.tribe</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
 
     <menuitem id="menu_tribe_form"
-        parent="menu_banana"
+        parent="menu_banana_root"
         action="action_tribe"
-        sequence="10"/>
+        sequence="20"/>
 
 </odoo>

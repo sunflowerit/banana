@@ -7,4 +7,10 @@ class MonkeyTribe(models.Model):
 
     name = fields.Char()
     description = fields.Text()
-    member_ids = fields.Many2many("res.users")
+    member_ids = fields.Many2many(
+        "res.users",
+        "triber_users_rel",
+        "tribe_id",
+        "user_id",
+        "Members",
+    )
