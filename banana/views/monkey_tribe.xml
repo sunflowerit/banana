@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="tribe_tree_view" model="ir.ui.view">
+        <field name="name">Tribe Tree</field>
+        <field name="model">monkey.tribe</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="id"/>
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="tribe_form_view" model="ir.ui.view">
+        <field name="name">Tribe Form</field>
+        <field name="model">monkey.tribe</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group>
+                        <group name="Details">
+                            <field name="description"/>
+                            <field name="member_ids" widget="many2many_tags"/>
+                        </group>
+                        <group>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_tribe" model="ir.actions.act_window">
+        <field name="name">Tribes</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">monkey.tribe</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_tribe_form"
+        parent="menu_banana"
+        action="action_tribe"
+        sequence="10"/>
+
+</odoo>
