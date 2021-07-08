@@ -5,7 +5,8 @@
     <!-- Based on 
          https://github.com/OCA/operating-unit/blob/13.0/operating_unit/security/operating_unit_security.xml
       -->
-    <record id="ir_rule_operating_unit_allowed_tribes" model="ir.rule">
+    <record id="ir_rule_user_allowed_tribes" model="ir.rule">
+        <field name="groups" eval="[(4, ref('banana.group_banana_user'))]"/>
         <field name="model_id" ref="model_monkey_tribe" />
         <field name="domain_force">[('id','in',user.tribe_ids.ids)]</field>
         <field name="name">Allowed tribes</field>
@@ -13,6 +14,17 @@
         <field eval="0" name="perm_write" />
         <field eval="1" name="perm_read" />
         <field eval="0" name="perm_create" />
+    </record>
+
+    <record id="ir_rule_superuser_allowed_tribes" model="ir.rule">
+        <field name="groups" eval="[(4, ref('banana.group_tribe_manager'))]"/>
+        <field name="model_id" ref="model_monkey_tribe" />
+        <field name="domain_force">[(1,'=',1)]</field>
+        <field name="name">Tribe superuser</field>
+        <field eval="1" name="perm_unlink" />
+        <field eval="1" name="perm_write" />
+        <field eval="1" name="perm_read" />
+        <field eval="1" name="perm_create" />
     </record>
 
   </data>

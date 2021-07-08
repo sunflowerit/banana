@@ -12,6 +12,7 @@
         "security/ir_rule_banana.xml",
         "security/ir_rule_tribe.xml",
         "views/banana.xml",
+        "views/banana_dinner_event.xml",
         "views/monkey_tribe.xml",
         "views/other_menus.xml",
     ],

@@ -5,4 +5,5 @@ access_banana_global_leader,access_banana_global_leader,model_banana,group_banan
 access_banana_superuser,access_banana_superuser,model_banana,group_tribe_manager,1,1,1,1
 access_monkey_tribe,access_monkey_tribe,model_monkey_tribe,base.group_user,1,0,0,0
 access_monkey_tribe_superuser,access_monkey_tribe_superuser,model_monkey_tribe,group_tribe_manager,1,1,1,1
-
+access_dinner,access_dinner,model_banana_dinner_event,base.group_user,1,0,0,0
+access_dinner_superuser,access_dinner_superuser,model_banana_dinner_event,group_tribe_manager,1,1,1,1

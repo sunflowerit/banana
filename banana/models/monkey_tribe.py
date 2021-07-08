@@ -9,7 +9,7 @@ class MonkeyTribe(models.Model):
     description = fields.Text()
     member_ids = fields.Many2many(
         "res.users",
-        "triber_users_rel",
+        "tribe_users_rel",
         "tribe_id",
         "user_id",
         "Members",
